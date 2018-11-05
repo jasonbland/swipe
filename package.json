@@ -14,6 +14,14 @@
     "react-native": "https://github.com/expo/react-native/archive/sdk-31.0.0.tar.gz"
   },
   "devDependencies": {
-    "babel-preset-expo": "^5.0.0"
+    "babel-eslint": "^10.0.1",
+    "babel-preset-expo": "^5.0.0",
+    "eslint": "^5.8.0",
+    "eslint-plugin-eslint-comments": "^3.0.1",
+    "eslint-plugin-jest": "^21.26.2",
+    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-react": "^7.11.1",
+    "eslint-plugin-react-native": "^3.5.0",
+    "eslint-plugin-react-redux": "^2.3.0"
   }
 }
