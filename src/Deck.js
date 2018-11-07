@@ -36,7 +36,7 @@ class Deck extends Component {
     this.state = { panResponder, position, index: 0 };
   }
 
-  componentWillMount() {
+  componentWillUpdate() {
     UIManager.setLayoutAnimationEnabledExperimental && UIManager.setLayoutAnimationEnabledExperimental(true);
     LayoutAnimation.spring();
   }
@@ -118,11 +118,15 @@ class Deck extends Component {
   render() {
     this.state.panResponder;
 
-    return <View>{this.renderCards()}</View>;
+    return <View style={styles.container}>{this.renderCards()}</View>;
   }
 }
 
 const styles = {
+  container: {
+    top: 50,
+    backgroundColor: 'grey'
+  },
   cardStyle: {
     position: 'absolute',
     width: SCREEN_WIDTH
